@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/econGrapher/static/css/main.26b7a574.chunk.css",
+    "main.js": "/econGrapher/static/js/main.e3f9e563.chunk.js",
+    "main.js.map": "/econGrapher/static/js/main.e3f9e563.chunk.js.map",
+    "runtime-main.js": "/econGrapher/static/js/runtime-main.828b33ee.js",
+    "runtime-main.js.map": "/econGrapher/static/js/runtime-main.828b33ee.js.map",
+    "static/js/2.9923dc97.chunk.js": "/econGrapher/static/js/2.9923dc97.chunk.js",
+    "static/js/2.9923dc97.chunk.js.map": "/econGrapher/static/js/2.9923dc97.chunk.js.map",
+    "static/js/3.80830c4d.chunk.js": "/econGrapher/static/js/3.80830c4d.chunk.js",
+    "static/js/3.80830c4d.chunk.js.map": "/econGrapher/static/js/3.80830c4d.chunk.js.map",
+    "index.html": "/econGrapher/index.html",
+    "static/css/main.26b7a574.chunk.css.map": "/econGrapher/static/css/main.26b7a574.chunk.css.map",
+    "static/js/2.9923dc97.chunk.js.LICENSE.txt": "/econGrapher/static/js/2.9923dc97.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.828b33ee.js",
+    "static/js/2.9923dc97.chunk.js",
+    "static/css/main.26b7a574.chunk.css",
+    "static/js/main.e3f9e563.chunk.js"
+  ]
+}
