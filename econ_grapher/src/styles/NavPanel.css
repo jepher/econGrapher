@@ -1,0 +1,140 @@
+.menu-btn {
+  outline: none;
+  border: none;
+  padding: 0;
+  position: fixed;
+  top: 0.5rem;
+  left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: all;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: none;
+  z-index: 101;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn-burger {
+  width: 70%;
+  height: 6px;
+  background: #7a7a7a;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.2s ease-in-out;
+  transform-origin: center;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 6px;
+  background: #7a7a7a;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: top 0.2s ease-in 0.2s, transform 0.2s ease-in,
+    width 0.2s ease-in-out;
+  transform-origin: center;
+  transform: translate(-50%, -2.5px);
+}
+
+.menu-btn-burger::before {
+  top: 25%;
+}
+
+.menu-btn-burger::after {
+  top: 75%;
+}
+
+.menu-btn.open {
+  transform: translateX(400%);
+}
+
+.menu-btn.open .menu-btn-burger {
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before,
+.menu-btn.open .menu-btn-burger::after {
+  top: 50%;
+  width: 50%;
+  transition: top 0.2s ease-in, transform 0.2s ease-out 0.2s;
+  /* background: var(--secondary-text); */
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: translate(-50%, -2.5px) rotate(135deg);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: translate(-50%, -2.5px) rotate(225deg);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 99;
+}
+
+.sidebar {
+  position: fixed;
+  transform: translateX(-100%);
+  width: 20rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #7cdcfc;
+  transition: all 0.5s;
+  z-index: 100;
+  box-shadow: 0 5px 15px#878787;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar-close-btn {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebarHead hr {
+  border: 1px solid #ababab;
+}
+
+.sidebar ul {
+  margin-left: 2rem;
+  padding: 0;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  font-size: 20px;
+}

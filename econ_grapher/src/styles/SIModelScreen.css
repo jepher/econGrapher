@@ -1,0 +1,169 @@
+#siScreen .graphPanel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60%;
+  flex: 1;
+}
+
+#siScreen .graphContainer {
+  flex: 1;
+  min-width: 0;
+  max-width: 1400px;
+  position: relative;
+}
+
+#siScreen .legendContainer {
+  margin-top: 3rem;
+  padding-right: 1rem;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#siScreen .legendContainer ul {
+  padding: 0;
+}
+
+#siScreen .legendItem {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+#siScreen .legendColor {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+#siScreen .sliderSection {
+  flex: 1;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+  display: inline-block;
+  max-width: 800px;
+}
+
+#siScreen .sliderContainer {
+  width: 100%;
+}
+
+#siScreen .slider {
+  display: flex;
+  align-items: center;
+}
+
+.sliderLabel {
+  width: 15%;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.sliderLabel.left {
+  text-align: right;
+}
+
+.sliderLabel.right {
+  text-align: left;
+}
+
+.sliderLabel.left::after,
+.sliderLabel.right::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  border: 0.5rem solid transparent;
+}
+
+.sliderLabel.left::after {
+  border-right: 1rem solid rgb(10, 190, 255);
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
+.sliderLabel.right::before {
+  border-left: 1rem solid rgb(10, 190, 255);
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+#siScreen .resetButton {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdb26;
+  border-radius: 5px;
+}
+
+#siScreen .userInterface {
+  display: flex;
+  flex-direction: row;
+  max-width: 1500px;
+}
+
+#siScreen .errorDisplay {
+  background-color: #fa4848;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.buttonSection {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#siScreen .optionButton {
+  cursor: pointer;
+  user-select: none;
+  width: 6rem;
+  height: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+#siScreen .optionButton:first-of-type {
+  margin-left: 0;
+}
+
+#siScreen .optionButton:last-of-type {
+  margin-right: 0;
+}
+
+.openEconomyInputSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.openEconomyInput {
+  width: 100%;
+}
+
+.openEconomySlider {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}

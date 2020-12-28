@@ -1,0 +1,179 @@
+#adasScreen .graphPanel {
+  width: 100%;
+  height: 60%;
+}
+
+#adasScreen .graphContainer {
+  flex: 1;
+  height: 100%;
+  max-width: 1400px;
+  position: relative;
+}
+
+#adasScreen .sliderSection {
+  flex: 1;
+  padding-right: 3rem;
+  display: inline-block;
+  max-width: 800px;
+}
+
+#adasScreen .sliderContainer {
+  width: 100%;
+}
+
+#adasScreen .slider {
+  display: flex;
+  align-items: center;
+}
+
+.sliderLabel {
+  width: 15%;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.sliderLabel.left {
+  text-align: right;
+}
+
+.sliderLabel.right {
+  text-align: left;
+}
+
+.sliderLabel.left::after,
+.sliderLabel.right::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  border: 0.5rem solid transparent;
+}
+
+.sliderLabel.left::after {
+  border-right: 1rem solid rgb(10, 190, 255);
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
+.sliderLabel.right::before {
+  border-left: 1rem solid rgb(10, 190, 255);
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+#adasScreen .resetButton {
+  cursor: pointer;
+  user-select: none;
+  padding: 0.75rem;
+  margin-top: 1.5rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdb26;
+  border-radius: 5px;
+}
+
+#adasScreen .userInterface {
+  display: flex;
+  flex-direction: row;
+  max-width: 1500px;
+}
+
+.demoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#helpTooltip {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transform: translateX(105%);
+  background-color: rgb(10, 190, 255);
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 12px;
+  max-width: 500px;
+}
+
+#helpTooltip:before {
+  pointer-events: none;
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border: 12px solid transparent;
+  border-right: 15px solid rgb(10, 190, 255);
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+#demoHelpIcon:hover + #helpTooltip {
+  opacity: 1;
+}
+
+#displayMessage {
+  opacity: 1;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.8rem;
+  font-size: 0.9rem;
+}
+
+.demoOptionsSection {
+  display: flex;
+  align-items: center;
+}
+
+.demoOptionButton {
+  cursor: pointer;
+  user-select: none;
+  width: 6rem;
+  height: 4rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 1rem;
+  border-radius: 5px;
+}
+
+.demoOptionButton:first-of-type {
+  margin-left: 0;
+}
+
+.demoOptionButton:last-of-type {
+  margin-right: 0;
+}
+
+#policyTargetInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#policyTargetSlider {
+  flex: 1;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.playButton {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
